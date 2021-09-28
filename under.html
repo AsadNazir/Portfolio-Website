@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./glide.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./glide.core.min.css">
+    <link rel="stylesheet" href="./glide.theme.css">
+    <link rel="stylesheet" href="./f.css">
+    <link rel="stylesheet" href="/f/css/under.css">
+    <title>Allhamdullilah</title>
+</head>
+
+<body>
+    <nav id="nav">
+        <h1>Asad's <span>Web</span></h1>
+        <span id="Menu" onclick="Open()"><i class="fas fa-bars fa-lg"></i></span>
+        <ul id="Menu_btn">
+            <span id="close"><i class="fas fa-times fa-lg"></i></span>
+            <li><a href="./index.html" target="_blank">Home</a></li>
+            <li><a href="">Meet me</a></li>
+            <li><a href="">love me</a></li>
+        </ul>
+    </nav>
+
+    <div class="logo">
+        <img src="/Svg/character 16.svg" alt="">
+        <h1>This site is under development</h1>
+        <p>Looks like you have reached the under development side of this website.</p>
+    </div>
+
+</body>
+<script>
+    //Experimemtal script
+    let menu = document.querySelector("#Menu");
+    menu.addEventListener("click", function() {
+        let menuItem = document.querySelector("#Menu_btn");
+        menuItem.style.transform = `translateX(0%)`;
+
+    })
+    let close = document.querySelector("#close");
+    close.addEventListener("click", function() {
+        let menuItem = document.querySelector("#Menu_btn");
+        menuItem.style.transform = `translateX(100%)`;
+
+    })
+</script>
+
+</html>
